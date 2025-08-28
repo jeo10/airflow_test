@@ -1,0 +1,10 @@
+{"timestamp":"2025-08-18T04:55:12.464964","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-18T04:55:12.465788","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/sql.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-18T04:55:12.612094","level":"info","event":"Executing: select count(*) from xcom","logger":"airflow.task.operators.my_sdk.decorators.sql._SQLDecoratedOperator"}
+{"timestamp":"2025-08-18T04:55:12.614858","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-08-18T04:55:12.919849","level":"info","event":"Connection Retrieved 'postgres'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-08-18T04:55:12.927630","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-08-18T04:55:12.934716","level":"info","event":"Connection Retrieved 'postgres'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-08-18T04:55:12.940326","level":"info","event":"Running statement: select count(*) from xcom, parameters: None","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
+{"timestamp":"2025-08-18T04:55:12.943739","level":"info","event":"Rows affected: 1","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook"}
+{"timestamp":"2025-08-18T04:55:12.944581","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('0198bb88-046c-7bd8-9497-459ab5236c47'), task_id='get_nb_xcoms', dag_id='sql_dag', run_id='manual__2025-08-18T04:55:10.159362+00:00', try_number=1, map_index=-1, hostname='577614de020e', context_carrier={}, task=<Task(_SQLDecoratedOperator): get_nb_xcoms>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 8, 18, 4, 55, 11, 989620, tzinfo=TzInfo(UTC)), end_date=None, is_mapped=False)","logger":"task"}
